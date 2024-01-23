@@ -42,7 +42,7 @@ ORDER BY ParcelID
 
 -----
 
-/* I want to it to find a ParcelID with a null PropertyAddress. Then populate the PropertyAddress from a different UniqueID with a matching ParcelID. */
+/* I want it to find any ParcelID with a null PropertyAddress. Then populate the PropertyAddress from a different UniqueID with a matching ParcelID. */
 SELECT a.ParcelID, a.PropertyAddress, b.ParcelID, b.PropertyAddress
 FROM portfolio..NashvilleHousing a
 JOIN portfolio..NashvilleHousing b
